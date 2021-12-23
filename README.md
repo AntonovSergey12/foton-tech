@@ -1,3 +1,3 @@
 # foton-tech
-# Sergey Antonov;
-# Nastavnik;
+# student: Sergey;
+# Nastavnik: Максим;
