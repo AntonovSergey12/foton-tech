@@ -7,7 +7,7 @@
   grid-template-rows: 34px 57px;
   grid-template-areas: "address firs"
                        "logo nav";
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 .header-top-address {
     width: 100%;
@@ -44,6 +44,7 @@
     grid-column: 2/3;
     grid-row: 2/3;
     justify-self: right;
+    align-self: center;
     margin-right: 50px;
     font-size: 18px;
 }
@@ -54,7 +55,9 @@
 }
 .header-logo {
     grid-area: logo;
-
+    justify-self: left;
+    align-self: center;
+    margin-left: 50px;
 }
 /*main*/
 main{
