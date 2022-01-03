@@ -48,3 +48,30 @@
 .nav-link a:hover{
     color: #FF7129;
 }
+
+.top-section {
+    width: 100%;
+    height: 350px;
+    background-image: url(/img/About/background.jpg);
+    background-size: cover;
+    background-position:center;  
+}
+.top-gradient {
+    
+}
+.top-content {
+    background: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), rgba(32, 36, 45, 0.3);
+    opacity: 0.9;
+    mix-blend-mode: multiply;   
+    position: relative;
+    text-align: left;
+    padding: 200px 0px 103px 217px;
+}
+.top-content>h1 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    color: #fff;
+}
