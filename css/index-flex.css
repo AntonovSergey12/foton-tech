@@ -99,7 +99,10 @@
     text-align: center;
     margin-top: 59px;
 }
-
+/*medium*/
+.left-fon {
+    align-content: left;
+}
 .medium-section { 
     min-height: 847px;
     display: flex;
@@ -116,7 +119,6 @@
     line-height: 97%;
     color: #20242D;
 }
-
 .content-text {
     margin-left: 70px;
     margin-bottom: 20px;
