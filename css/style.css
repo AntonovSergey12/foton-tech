@@ -144,9 +144,11 @@
 .medium-section { 
     min-height: 847px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-image: url(../img/index/fon-house.png);
+    background-repeat: no-repeat;
+    background-position: 28px 90px;
 }
 .medium-content>h2 {
     margin-left: 70px;
