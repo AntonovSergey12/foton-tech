@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Gilroy";
+    font-family: "gilroy";
     font-style: normal; 
     font-weight: 400;
     src: url(../fonts/gilroy-regular.ttf);
@@ -22,13 +22,14 @@
     font-weight: 700;
     src: url(../fonts/gilroy-bold.ttf);
 }
-
-
 * {
+    font-family: "Gilroy", "Helvetica", sans-serif;;
+    font-style: normal;
     margin: 0;
 }
 .header-top-address {
     display: flex;
+    font-size: 12px;
     width: 100%;
     justify-content: space-between;
     background-color: black;
@@ -49,16 +50,15 @@
 }
 .header-nav {
     display: flex;
+    font-size: 14px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0 auto;
 }
-
 .header-logo {
     margin: 12px auto 11px 50px
 }
-
 .nav-link {
     display: flex;
 }
@@ -66,7 +66,6 @@
     list-style-type: none;
 }
 .nav-link>li>a {
-    font-family: "Gilroy", "Helvetica", sans-serif;
     font-weight: 600;
     text-decoration: none;
     color: #20242D;
@@ -76,15 +75,14 @@
     color: #FF7129;
 }
 .nav-link a:active {
-    color: #FF7129;
+    color: #d65818;
 }
 .nav-link a:focus {
-    color: #FF7129;
+    color: #e04d04;
 }
 /*main*/
 
 .top-section {
-    width: 100%;
     height: 844px;
     background-image: url(/img/index/background.jpg) ;
     background-size: cover;
@@ -98,12 +96,12 @@
     opacity: 0.9px;
 }
 .top-content>h1 {
+    font-weight: bold;
     position: relative;
     text-align: center;
     color: #fff;
     font-size: 92px;
     font-weight: bold;
-    font-style: normal;
     line-height: 111px;
     padding-top:  319px ;
 }
@@ -111,19 +109,16 @@
     position: relative;
     text-align: center;
     color: #fff;
-    font-style: normal;
     font-weight: normal;
     line-height: 24px;
 }
 .first-button>button {
-    font-family: "Gilroy", "Helvetica", sans-serif;
     width: 187px;
     height: 49px;
     color: #fff;
     font-size: 14px;
     line-height: 17px;
     font-weight: bold;
-    font-style: normal;
     background-color: #FF7129;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
     border: 0;
@@ -131,6 +126,16 @@
 .first-button {
     text-align: center;
     margin-top: 59px;
+}
+.first-button>button:hover {
+    background-color: #f85300;
+}
+.first-button>button:active
+{
+    background-color: #da6227;
+}
+.first-button>button:focus {
+    background-color: #d87849;
 }
 /*medium*/
 .left-fon {
@@ -146,9 +151,9 @@
 .medium-content>h2 {
     margin-left: 70px;
     margin-bottom: 64px;
-    font-style: normal;
     font-weight: bold;
     font-size: 48px;
+    font-weight: bold;
     line-height: 97%;
     color: #20242D;
 }
@@ -157,11 +162,12 @@
     margin-bottom: 20px;
     width: 535px;
     height: 216px;
+    font-weight: normal;
 }
 .content-text>p {
-    font-family: "Gilroy", "Helvetica", sans-serif;
     margin-bottom: 2em;
 }
+/*footer*/
 footer {
     height: 207px;
     width: 100%;
@@ -180,6 +186,9 @@ footer {
 }
 .footer-link {
     display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     justify-items: flex-start;
     margin-right: 70px;
 }
@@ -195,10 +204,10 @@ footer {
     color: #FF7129;
 }
 .footer-link a:focus {
-    color: #FF7129;
+    color: #e04d04;
 }
 .footer-link a:active {
-    color: #FF7129;
+    color: #d65818;
 }
 .bt-popup>button{
     width: 187px;
@@ -207,6 +216,14 @@ footer {
     background-color: #20242D;
     color: #fff;
     box-sizing: border-box;
+}
+.bt-popup>button:hover{
+    border: 1px solid #cc5317;
+    background-color: #262a35;
+}
+.bt-popup>button:active{
+    border: 1px solid #e46c30;
+    background-color: #2f3138;
 }
 .bt-popup {
    margin-right: 50px;
@@ -218,6 +235,9 @@ footer {
 }
 .footer-av {
     display: flex;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
     justify-content: space-between;
 }
 .footer-av>a {
@@ -225,76 +245,54 @@ footer {
     color: #7B7E85;
     margin: 0 51px;
 }
+.footer-av>a:hover {
+    color: #878a92;
+}
+.footer-av>a:active{
+    color: #757575;
+}
 
 /*about.html*/
-.header-top-address {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
-    height: 34px;
-}
-.top-info {
-  margin-right: 50px;
-  
-}
-.top-info>a {
-    text-decoration: none;
-    color: #fff;
-    margin-left: 70px;
-}
-.header-top-address>address {
-    margin-left: 50px;
-    color: #fff;
-}
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.header-logo {
-    margin: 12px auto 11px 50px
-}
-
-.nav-link {
-    display: flex;
-}
-.header-nav>ul {
-    list-style-type: none;
-}
-.nav-link>li>a {
-    text-decoration: none;
-    color: #20242D;
-    margin: auto 56px;
-}
-.nav-link a:hover{
-    color: #FF7129;
-}
-
-.top-section {
-    width: 100%;
-    height: 350px;
-    background-image: url(/img/About/background.jpg);
+.about-back {
+    background-image: url(../img/About/background.jpg);
     background-size: cover;
-    background-position:center;  
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
 }
-.top-content {
-    background: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), rgba(32, 36, 45, 0.3);
-    opacity: 0.9;
-    mix-blend-mode: multiply;   
-    position: relative;
-    text-align: left;
-    padding: 200px 0px 103px 350px;
+.wrraper {
+    background: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), rgba(32, 36, 45, 0.3);;
 }
-.top-content>h1 {
-    font-family: "Gilroy", "Helvetica", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 97%;
+.about-text {
+    justify-items: center;
+}
+.about-text>h1 
+{   z-index: 10;
     color: #fff;
+    font-size: 48px;
+    padding: 200px 1253px 103px 217px;
+    font-weight: bold;
+    line-height: 97%;
 }
+.about-content {
+    display: flex;
+    min-height: 432px;
+    background-image: url(../img/About/left-fon.png);
+    background-repeat: no-repeat;
+    background-position: 0 130px;
+}
+.all-text {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 80px;
+    line-height: 24px;
+}
+.tex-left>p {
+    margin-bottom: 2em;
+}
+.text-right>p{
+    margin-left: 66px;
+}
+
+
+
