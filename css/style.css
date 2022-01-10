@@ -116,7 +116,7 @@ html {
     position: relative;
 }
 .top-wrapper::before{
-    content: '';
+    content: ' ';
     position: absolute;
     top: 0;
     right: 0;
@@ -353,4 +353,72 @@ html {
 }
 .right-paragraph {
     margin-left: 66px;
+}
+
+/*projekty*/
+.projekty-main {
+    width: 100%;
+    min-height: 894px;
+}
+.main-banner {
+    font-weight: bold;
+    font-size: 48px;
+    color: #20242D;
+    line-height: 97%;
+    padding-top: 125px;
+    padding-left: 218px;
+    padding-right: auto;
+    padding-bottom: 37px;
+}
+.main-slaider{
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+/*kontakt*/
+.kontakt-main {
+    width: 100%;
+    min-height: 782px;
+}
+.kontakt-banner {
+    font-size: 48px;
+    line-height: 97%;
+    font-weight: bold;
+    color: #20242D;
+    padding-top: 125px;
+    padding-left: 217px;
+    padding-right: auto;
+    padding-bottom: 67px;
+}
+.kontakt-content {
+    width: 100%;
+    padding-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.kontakt-addresses {
+    padding-left: 201px;
+    align-self: center;
+}
+.kontakt-map {
+    width: 800px;
+    align-self: end;
+    height: 543px;
+    background-image: url(../img/kontakt/map.jpg);
+    position: relative;
+}
+.kontakt-date-info {
+    padding-left: 12px;
+    margin-bottom: 85px;
+    margin-top: 12px;
+}
+.kontakt-date-info-link {
+    text-decoration: none;
+    color: #20242D;
+    font-weight: normal;
+    line-height: 19px;
+}
+.kontakt-date-info-link-tel {
+    font-weight: 600;
 }
