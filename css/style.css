@@ -144,6 +144,8 @@ html {
     padding-top: 16px;
     margin-right: auto;
     font-weight: normal;
+    max-width: 508px;
+    margin-left: auto;
     line-height: 24px;
 }
 .first-button {
@@ -197,6 +199,8 @@ html {
 }
 .content-text {
     margin-left: 65px;
+    max-width: 535px;
+    max-height: 216px;
     font-weight: normal;
     line-height: 24px;
 }
@@ -345,14 +349,19 @@ html {
     display: flex;
     padding-left: 200px;
     padding-top: 80px;
+    max-height: 168px;
+    max-width: 1134px;
     font-weight: normal;
     line-height: 24px;
 }
 .left-paragraph {
     margin-bottom: 2em;
+    max-width: 534px;
+    
 }
 .right-paragraph {
     margin-left: 66px;
+    max-width: 534px;
 }
 
 /*projekty*/
@@ -475,7 +484,7 @@ html {
 .heading::before {
     content: '|';
     font-weight: 400;
-    margin-right: 16px;
+    margin-right: 8px;
     color: #FF7129;
 }
 .instalacia-panels {
@@ -486,7 +495,7 @@ html {
     font-weight: normal;
     line-height: 24px;
     color: #20242D;
-    margin-bottom: 2em;
+    margin-bottom: 24px;
 }
 .instalacia-houses {
     display: flex;
@@ -508,6 +517,7 @@ html {
     font-size: 20px;
     line-height: 30px;
     background-color: #f5f5f5;
+    margin-bottom: 0;
 }
 .instalacia-heading-third {
     font-weight: 600;
@@ -525,4 +535,38 @@ html {
     line-height: 24px;
     margin-bottom: 24px;
     color: #20242D;
+}
+.instalacia-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+ .instalacia-list-text {
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+}
+.instalacia-list-text:last-child {
+    margin-bottom: 24px;
+}
+.instalacia-list-text::before {
+    content: '\279D';
+    font-size: 30px;
+    margin-right: 21px;
+    color: #FF7129;
+}
+.instalacia-roof-panel {
+    margin-bottom: 33px;
+}
+.intalacia-back-grey {
+    background: #f2f2f2;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+}
+.intalacia-back-grey .heading {
+    padding-top: 32px;
+    padding-left: 2px;
+    padding-right: auto;
 }
