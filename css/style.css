@@ -38,15 +38,10 @@ html {
 .header {
     width: 100%;
 }
-.header-wrapper {
-    width: 100%;
-    background-color: #fff;
-}
 .header-wrapper-black {
     background-color: #20242D;
 }
 .conteiner {
-    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     padding-left: 50px;
@@ -74,17 +69,31 @@ html {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+    position: relative;
+}
+.header-link::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-image: url(../img/index/mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -21px;
+}
+.header-link:last-child::before {
+    background-image: url(../img/index/tel.svg);
 }
 .nav-link {
     list-style: none;
     margin: 0;
-    padding: 0;
     padding-top: 20px;
+    padding-right: 50px;
     padding-bottom: 20px;
     display: flex;
 }
 .nav-item {
-    margin-right: 50px;
+    margin-right: 56px;
     text-decoration: none;
     color: #20242D;
     font-weight: 600;
@@ -95,6 +104,24 @@ html {
     padding-top: 12px;
     padding-bottom: 11px;
 }
+.nav-item.nav-item-line {
+    position: relative;
+}
+.nav-item.nav-item-line:active:before,
+.nav-item.nav-item-line:active:after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #da6227;
+    top: 8px;
+}
+.nav-item.nav-item-line::before {
+    left: -18px;
+}
+.nav-item.nav-item-line::after {
+    right: -18px;
+}
 .nav-item:hover {
     color: #FF7129;
 }
@@ -104,28 +131,50 @@ html {
 .nav-item:active {
     color: #d65818;
 }
-.top-section {
-  width: 100%;
-}
 .top-wrapper {
-    background-image: url(../img/index/background.jpg);
+    background-image: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), url(../img/index/background.jpg);
     min-height: 844px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    
 }
 .top-wrapper::before{
-    content: ' ';
+    content: 'SOLAR';
+    width: 379px;
+    height: 145px;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background:radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), rgba(32, 36, 45, 0.3) ;
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 145px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.3;
+    top: 167px;
+    left: 50px;
+}
+.top-wrapper::after{
+    content: 'ENERGY';
+    width: 379px;
+    height: 145px;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 145px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.3;
+    top: 417px;
+    right: 50px;
+    left: 1106px
 }
 .top-content {
     z-index: 1;
@@ -138,7 +187,7 @@ html {
     font-size: 92px;
     line-height: 111px;
     padding-top: 271px;
-    padding-left: auto;
+    text-align: center;
 }
 .banner-text {
     padding-top: 16px;
@@ -171,17 +220,19 @@ html {
 .banner-button:focus {
     background-color: #d87849;
 }
-.banner-button:active
-{
-    background-color: #da6227;
-}
+
 .medium-section {
     width: 100%;
 }
 .medium-conteiner {
     display: flex;
     align-items: center;
-    padding-bottom: 115px;
+    justify-content: center;
+    padding-bottom: 115px; 
+    position: relative;  
+}
+.vertical-line {
+    position: relative;
 }
 .house {
     padding-left: 202px;
@@ -191,16 +242,25 @@ html {
     background-repeat: no-repeat;
 }
 .medium-content-chapter {
-    margin-left: 65px;
+    margin-left: 82px;
     margin-bottom: 64px;
     font-weight: bold;
     font-size: 48px;
     line-height: 97%;
+    position: relative;
+}
+.medium-content-chapter::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #ff7129;
+    left: -17px;
 }
 .content-text {
     margin-left: 65px;
     max-width: 535px;
-    max-height: 216px;
+    min-height: 216px;
     font-weight: normal;
     line-height: 24px;
 }
@@ -210,17 +270,12 @@ html {
 .footer{ 
     width: 100%;
 }
-.footer-wrapper {
-    width: 100%;
-    background: #fff;
-}
 .footer-wrapper-black {
     width: 100%;
     min-height: 207px;
     background-color: #20242d;
 }
 .footer-nav {
-    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
@@ -247,6 +302,9 @@ html {
 }
 .nav-item-footer:active {
     color: #d65818;
+}
+.space-item {
+    margin-right: 0;
 }
 .bt-popup {
     margin-right: 50px;
@@ -276,19 +334,17 @@ html {
     border: 1px solid #e46c30;
     background-color: #3a3c44;
 }
-.inline {
-    border: 1px solid rgb(88, 88, 88);
-    width: 94%;
-    margin: auto;
-}
+
 .footer-av {
     padding-top: 24px;
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 .footer-av-link {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 25px;
     color:#7B7E85;
     font-size: 12px;
     font-weight: normal;
@@ -326,7 +382,23 @@ html {
 }
 .about-top {
     position: relative;
-    z-index: 1;
+}
+.about-top::before {
+    content: "ABOUT";
+    width: 379px;
+    height: 145px;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.3;
+    top: 131px;
+    left: 173px;
 }
 .about-text {
     font-weight: bold;
@@ -335,8 +407,16 @@ html {
     color: #fff;
     padding-top: 200px;
     padding-bottom: 103px;
-    padding-left: 217px;
-    padding-right: auto;
+    margin-left: 217px;
+    position: relative;
+}
+.about-text::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #ff7129;
+    left: -17px;
 }
 .about-content {
     width: 100%;
@@ -347,10 +427,10 @@ html {
 }
 .all-text {
     display: flex;
-    padding-left: 200px;
+    justify-content: center;
     padding-top: 80px;
-    max-height: 168px;
-    max-width: 1134px;
+    min-height: 168px;
+    max-width: 1600px;
     font-weight: normal;
     line-height: 24px;
 }
@@ -367,7 +447,27 @@ html {
 /*projekty*/
 .projekty-main {
     width: 100%;
-    min-height: 894px;
+
+}
+.projekty-back-title {
+    position: relative;
+}
+.projekty-back-title::before {
+    content: "GALLERY";
+    width: 379px;
+    height: 145px;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    opacity: 0.1;
+    top: 56px;
+    left: 174px;
 }
 .main-banner {
     font-weight: bold;
@@ -375,20 +475,49 @@ html {
     color: #20242D;
     line-height: 97%;
     padding-top: 125px;
-    padding-left: 218px;
-    padding-right: auto;
-    padding-bottom: 37px;
+    margin-left: 218px;
+    margin-bottom: 37px;
+    position: relative;
+}
+.main-banner::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #ff7129;
+    left: -17px;
 }
 .main-slaider{
     display: flex;
     justify-items: center;
     margin: 0 auto;
+    padding-bottom: 153px;
 }
 
 /*kontakt*/
 .kontakt-main {
     width: 100%;
     min-height: 782px;
+}
+.kontakt-back-banner {
+    position: relative;
+}
+.kontakt-back-banner::before {
+    content: "CONTACTS";
+    width: 379px;
+    height: 145px;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    opacity: 0.1;
+    top: 56px;
+    left: 174px;
 }
 .kontakt-banner {
     font-size: 48px;
@@ -397,12 +526,9 @@ html {
     color: #20242D;
     padding-top: 125px;
     padding-left: 217px;
-    padding-right: auto;
-    padding-bottom: 67px;
+    margin-bottom: 67px;
 }
 .kontakt-content {
-    width: 100%;
-    padding-bottom: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -417,10 +543,30 @@ html {
     background-image: url(../img/kontakt/map.jpg);
     position: relative;
 }
+.kontakt-data {
+    color:#7B7E85;
+}
 .kontakt-date-info {
-    padding-left: 12px;
+    position: relative;
+    margin-left: 28px;
     margin-bottom: 85px;
     margin-top: 12px;
+}
+.kontakt-date-info::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/index/mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -26px;
+}
+.kontakt-date-info:nth-of-type(1)::before {
+    background-image: url(../img/kontakt/address.svg);
+}
+.kontakt-date-info:last-child::before {
+    background-image: url(../img/kontakt/tel.svg);
 }
 .kontakt-date-info-link {
     text-decoration: none;
@@ -464,6 +610,23 @@ html {
     padding-left: 451px;
     padding-right: auto;
 }
+.instalacia-banner::before {
+    content: "FOTON-TECH";
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    width: 590px;
+    height: 116px;
+    font-size: 96px;
+    line-height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
 .instalacia-medium-section {
     width: 100%;
     padding-top: 120px;
@@ -478,14 +641,18 @@ html {
 .heading {
     margin-bottom: 32px;
     font-size: 36px;
+    margin-left: 17px;
     line-height: 44px;
     font-weight: bold;
+    position: relative;
 }
 .heading::before {
-    content: '|';
-    font-weight: 400;
-    margin-right: 8px;
-    color: #FF7129;
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 42px;
+    background-color: #ff7129;
+    left: -17px
 }
 .instalacia-panels {
     padding-top: 24px;
@@ -546,15 +713,20 @@ html {
  .instalacia-list-text {
     background-color: #f2f2f2;
     margin-bottom: 16px;
+    position: relative;
+    padding-left: 57px;
 }
 .instalacia-list-text:last-child {
     margin-bottom: 24px;
 }
 .instalacia-list-text::before {
-    content: '\279D';
-    font-size: 30px;
-    margin-right: 21px;
-    color: #FF7129;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 4px;
+    background-image: url(../img/instalacia/list.svg);
 }
 .instalacia-roof-panel {
     margin-bottom: 33px;
