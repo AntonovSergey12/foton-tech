@@ -8,5 +8,5 @@ buttonCall.addEventListener('click', function () {
 })
 
 closePopUp.addEventListener('click', function () {
-    popupSection.classList.remove('popup-container')
+    popupSection.classList.remove('popup-container-show')
 })
