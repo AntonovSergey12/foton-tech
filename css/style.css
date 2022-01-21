@@ -230,6 +230,22 @@ html {
     padding-bottom: 115px; 
     position: relative;  
 }
+.medium-conteiner::before {
+    position: absolute;
+    content: "INFO";
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    opacity: 0.1;
+    width: 217px;
+    height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    top: 112px;
+    left: 970px;
+}
 .vertical-line {
     position: relative;
 }
@@ -606,8 +622,7 @@ html {
     color: #fff;
     z-index: 1;
     padding-top: 162px;
-    padding-left: 451px;
-    padding-right: auto;
+    text-align: center;
 }
 .instalacia-banner::before {
     content: "FOTON-TECH";
@@ -625,6 +640,23 @@ html {
     opacity: 0.3;
     top: 0;
     left: 0;
+}
+.instalacia-banner::after {
+    content: "INSTALACJA";
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    width: 590px;
+    height: 116px;
+    font-size: 96px;
+    line-height: 116px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.3;
+    top: 321px;
+    right: -10px;
 }
 .instalacia-medium-section {
     width: 100%;
