@@ -298,6 +298,16 @@ html {
     align-items: center;
     padding-left: 50px;
     min-height: 144px;
+    position: relative;
+}
+.footer-nav::after {
+    position: absolute;
+    content: "";
+    width: 1080px;
+    height: 1px;
+    background: #7B7E85;
+    bottom: 10px;
+    opacity: 0.3;
 }
 .footer-link {
     display: flex;
@@ -513,6 +523,14 @@ html {
 .kontakt-main {
     width: 100%;
     min-height: 782px;
+}
+.kontakt-main::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:#7B7E85;
+    opacity: 0.15;
 }
 .kontakt-back-banner {
     position: relative;
@@ -859,6 +877,112 @@ html {
 .oblic-label-input {
     display: inline-block;
     padding-top: 40px;
+    padding-left: 58px;
+    color: #7B7E85;
+}
+.popup-oblic-batton {
+    display: flex;
+    width: 327px;
+    height: 52px;
+    margin-top: 12px;
+    padding-left: 24px;
+    line-height: 19px;
+    font-weight: normal;
+}
+.send-button {
+    padding-top: 56px;
+    text-align: center;
+    padding-bottom: 52px;
+}
+.send {
+    background: #ff7129;
+    min-width: 187px;
+    min-height: 49px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29)
+}
+/*popup-oddzvon*/
+.popup-container-oddzwon {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(32, 36, 45, 0.9);
+    display: none;
+}
+.popup-container-oddzwon-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin-left: auto;
+}
+.popup-content-oddzwon {
+    background-color: #fff;
+    color: #20242D;
+    min-width: 800px;
+    position: relative;
+}
+.popup-content-oddzwon::before {
+    position: absolute;
+    content: "CALLBACK";
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.1;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    top: 29px;
+    left: 32px;
+}
+.popup-close-oddzwon {
+    color: #20242d;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background: none;
+    border: 0;
+}
+.title-oblic-popup {
+    padding-top: 97px;
+    padding-left: 75px;
+    color: #20242D;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+}
+.popup-oblic-text {
+    padding-left: 58px;
+    padding-top: 19px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242d;
+    margin-bottom: 56px;
+    max-width: 668px;
+}
+.label-oblic {
+    padding-left: 58px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B7E85;
+}
+.call-form .oblic-label-input:last-child {
+    padding-left: 30px;
+    padding-right: 58px;
+}
+.oblic-label-input {
+    display: inline-block;
     padding-left: 58px;
     color: #7B7E85;
 }
