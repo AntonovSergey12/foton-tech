@@ -116,6 +116,9 @@ body {
 .nav-item:active {
     color: #d65818;
 }
+.nav-item-line {
+    color: #ff7129;
+}
 .nav-item-line::before,
 .nav-item-line::after {
     position: absolute;
@@ -150,7 +153,7 @@ main {
     position: relative;
 }
 .top-wrapper::before {
-    content: 'SOLAR';
+    content: 'solar';
     width: 379px;
     height: 145px;
     position: absolute;
@@ -243,7 +246,7 @@ main {
 }
 .medium-content::before {
     position: absolute;
-    content: "INFO";
+    content: "info";
     font-weight: bold;
     font-size: 96px;
     line-height: 116px;
@@ -303,13 +306,7 @@ main {
     align-items: center;
     position: relative;
 }
-.footer-nav::before {
-    position: absolute;
-    content: "";
-    width: calc(100% - 100px);
-    height: 1px;
-    bottom: 0;
-    background-color: rgba(123, 126, 133, 0.3);
+.footer-nav::after {
 }
 .footer-link {
     display: flex;
@@ -368,6 +365,16 @@ main {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+    position: relative;
+}
+.footer-av::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 100px);
+    height: 1px;
+    bottom: 0;
+    background-color: rgba(123, 126, 133, 0.3);
+    top: 0px;
 }
 .footer-av-link {
     color: #7B7E85;
@@ -396,7 +403,7 @@ main {
     position: relative;
 }
 .about-top::before {
-    content: "ABOUT";
+    content: "about";
     width: 379px;
     height: 145px;
     position: absolute;
@@ -469,7 +476,7 @@ main {
     position: relative;
 }
 .projekty-back-title::before {
-    content: "GALLERY";
+    content: "gallery";
     width: 379px;
     height: 145px;
     position: absolute;
@@ -525,7 +532,7 @@ main {
     position: relative;
 }
 .kontakt-back-banner::before {
-    content: "CONTACTS";
+    content: "contacts";
     width: 379px;
     height: 145px;
     position: absolute;
@@ -631,7 +638,7 @@ main {
     text-align: center;
 }
 .instalacia-banner::before {
-    content: "FOTON-TECH";
+    content: "foton-tech";
     position: absolute;
     font-style: normal;
     font-weight: bold;
@@ -805,7 +812,7 @@ main {
 }
 .popup-content::before {
     position: absolute;
-    content: "CALCULATOR";
+    content: "calculator";
     font-weight: bold;
     font-size: 96px;
     line-height: 116px;
