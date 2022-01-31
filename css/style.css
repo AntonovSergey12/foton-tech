@@ -306,8 +306,6 @@ main {
     align-items: center;
     position: relative;
 }
-.footer-nav::after {
-}
 .footer-link {
     display: flex;
     list-style: none;
@@ -618,7 +616,7 @@ main {
     font-weight: 600;
 }
 /*instalacia*/
-.instalacia-top-section {
+.installation-top-section {
     width: 100%;
     background-image: url(../img/instalacia/back-header.jpg);
     min-height: 412px;
@@ -627,7 +625,7 @@ main {
     background-size: cover;
     position: relative;
 }
-.instalacia-top-section::before {
+.installation-top-section::before {
     content: ' ';
     position: absolute;
     top: 0;
@@ -638,7 +636,7 @@ main {
     mix-blend-mode: multiply;
     opacity: 0.9;
 }
-.instalacia-banner {
+.installation-banner {
     position: relative;
     font-weight: bold;
     font-size: 72px;
@@ -648,7 +646,7 @@ main {
     padding-top: 162px;
     text-align: center;
 }
-.instalacia-banner::before {
+.installation-banner::before {
     content: "foton-tech";
     position: absolute;
     font-style: normal;
@@ -665,7 +663,7 @@ main {
     top: 0;
     left: 0;
 }
-.instalacia-banner::after {
+.installation-banner::after {
     content: "INSTALACJA";
     position: absolute;
     font-style: normal;
@@ -682,14 +680,14 @@ main {
     top: 321px;
     right: -10px;
 }
-.instalacia-medium-section {
+.installation-medium-section {
     width: 100%;
     padding-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.instalacia-content {
+.installation-content {
     max-width: 700px;
     margin-bottom: 64px;
 }
@@ -709,31 +707,31 @@ main {
     background-color: #ff7129;
     left: -17px
 }
-.instalacia-panels {
+.installation-panels {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.instalacia-paragraph {
+.installation-paragraph {
     font-weight: normal;
     line-height: 24px;
     color: #20242D;
     margin-bottom: 24px;
 }
-.instalacia-houses {
+.installation-houses {
     display: flex;
 }
-.instalacia-houses-image {
+.installation-houses-image {
     margin-left: 29px;
     padding-top: 24px;
     padding-bottom: 40px;
 }
-.instalacia-houses-image:first-child {
+.installation-houses-image:first-child {
     margin-left: 0;
 }
-.instalacia-text-orang {
+.installation-text-orang {
  color: #FF7129;
 }
-.instalacia-paragraph-house {
+.installation-paragraph-house {
     padding: 16px 24px;
     font-weight: normal;
     font-size: 20px;
@@ -741,7 +739,7 @@ main {
     background-color: #f5f5f5;
     margin-bottom: 0;
 }
-.instalacia-heading-third {
+.installation-heading-third {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -758,23 +756,23 @@ main {
     margin-bottom: 24px;
     color: #20242D;
 }
-.instalacia-list {
+.installation-list {
     list-style: none;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
 }
- .instalacia-list-text {
+.installation-list-text {
     background-color: #f2f2f2;
     margin-bottom: 16px;
     position: relative;
     padding-left: 57px;
 }
-.instalacia-list-text:last-child {
+.installation-list-text:last-child {
     margin-bottom: 24px;
 }
-.instalacia-list-text::before {
+.installation-list-text::before {
     position: absolute;
     content: "";
     width: 16px;
@@ -783,7 +781,7 @@ main {
     top: 4px;
     background-image: url(../img/instalacia/list.svg);
 }
-.instalacia-roof-panel {
+.installation-roof-panel {
     margin-bottom: 33px;
 }
 .intalacia-back-grey {
