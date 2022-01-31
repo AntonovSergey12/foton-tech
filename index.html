@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="header-wrapper">
-            <div class="conteiner-info">
+            <div class="container-info">
                 <address class="address">
                     Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek 
                 </address>
@@ -17,7 +17,7 @@
                 <a href="tel:+48695716531" class="header-link">+48695716531</a>
             </div>
         </div>
-        <div class="conteiner">
+        <div class="container">
             <div class="header-logo">
                 <a href="index.html"><img src="img/Logo1.png" alt="foton-tech" width="131" height="34"></a>
             </div>
@@ -45,7 +45,7 @@
             </div> 
         </section>
         <section class="medium-section">
-                <div class="medium-conteiner">
+                <div class="medium-container">
                     <div class="house">
                         <img src="img/index/house.jpg" alt="foton-tech house" width="800px" height="600px">
                     </div>
@@ -96,61 +96,101 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="bt-popup">
+                <div class="btn-popup">
                     <button class="footer-button">Oddzwoń</button>
                 </div>
             </div>
             
-            <div class="footer-av">
-                <a href="" class="footer-av-link">Polityka prywatności</a>
-                <a href="" class="footer-av-link">Ochrona danych osobowych</a>
+            <div class="footer-author">
+                <a href="" class="footer-author-link">Polityka prywatności</a>
+                <a href="" class="footer-author-link">Ochrona danych osobowych</a>
             </div>
         </div>
     </footer>
-<div class="popup-container">
-            <div class="popup-content">
-                <h2 class="title-oblic-popup">Obliczyć koszt</h2>
-                <button class="popup-close">X</button>
-                <p class="popup-oblic-text">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-                <label class="label-oblic">
-                    Roczne zużycie energii elektrycznej
-                </label>
-                <form class="call-form">
-                    <div class="slidercontainer">
-                        <input type="range" min="1" max="50000" value="50" class="slider-popup">
-                    </div>
-                    <label for="" class="oblic-label-input">Strona świata
-                        <input type="text" name="storona" id="storona" placeholder="Wybierz z listy" class="popup-oblic-batton" required>
+    <div class="popup-container">
+                <div class="popup-content">
+                    <h2 class="title-oblic-popup">Obliczyć koszt</h2>
+                    <button class="popup-close"></button>
+                    <p class="popup-oblic-text">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+                    <label class="label-oblic">
+                        Roczne zużycie energii elektrycznej
                     </label>
-                    <label for="" class="oblic-label-input">Materiał dachu
-                        <input type="text" name="material" id="material" placeholder="Wybierz z listy" class="popup-oblic-batton" required>
+                    <form class="call-form">
+                        <div class="slidercontainer">
+                            <input type="range" min="1" max="50000" value="50" class="slider-popup">
+                        </div>
+                        <label for="" class="oblic-label-input">Strona świata
+                            <input type="text" name="storona" id="storona" placeholder="Wybierz z listy" class="popup-oblic-button" required>
+                        </label>
+                        <label for="" class="oblic-label-input">Materiał dachu
+                            <input type="text" name="material" id="material" placeholder="Wybierz z listy" class="popup-oblic-button" required>
+                        </label>
+                    </form>
+                    <div class="send-button button-questions">
+                        <button class="send" type="submit">Obliczyć</button>
+                    </div>
+                </div>
+        </div>
+        <div class="popup-container-questions">
+            <div class="popup-content-questions">
+                <div class="popup-top-price">
+                    <label class="labe-price">Przybliżony koszt:
+                    </label>
+                    <span class="price">40 000 zł</span>
+                    <div class="button-back">
+                        <button class="back">Przeliczyć</button>
+                    </div>
+                </div>
+                <h2 class="title-oblic-popup">Jakieś pytania?</h2>
+                <button class="popup-close close-questions"></button>
+                <p class="popup-oblic-text-questions">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+                <form class="call-form">
+                    <div class="questions-name-mail">
+                        <label for="" class="oblic-label-input-questions">Twoje imię
+                            <input type="text" name="storona" id="storona" placeholder="Wprowadź swoje imię" class="input-questions" required>
+                        </label>
+                        <label for="" class="oblic-label-input-questions">E-mail
+                            <input type="text" name="material" id="material" placeholder="Wprowadź mail" class="input-questions" required>
+                        </label>
+                    </div> 
+                        <label for="" class="oblic-label-input-questions">Telefon
+                            <input type="text" name="material" id="material" placeholder="Wprowadź telefon" class="input-questions tel-questions" required>
+                        </label>
+                        <button class="send send-questions button-thanks" type="submit">Wysłać prośbę</button>
+                </form>
+               
+            </div>
+    </div>    
+    <div class="popup-container-thanks">
+        <div class="popup-content-thanks">
+            <div class="popup-svg-thanks"></div>
+            <h2 class="title-oblic-popup-thanks">Dziękuję za twoją prośbę</h2>
+            <button class="popup-close close-thanks"></button>
+            <p class="popup-oblic-text-thanks">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+            <div class="send-button button-thank">
+                <button class="thanks" type="submit">Ok</button>
+            </div>
+        </div>
+</div>    
+    <div class="popup-container-call-back">
+            <div class="popup-content-call-back">
+                <h2 class="title-oblic-popup">Oddzwoń</h2>
+                <button class="popup-close close-call-back"></button>
+                <p class="popup-oblic-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+                <form class="call-form">
+                    <label for="" class="oblic-label-input">Twoje imię
+                        <input type="text" name="storona" id="storona" placeholder="Wprowadź swoje imię" class="popup-oblic-button" required>
+                    </label>
+                    <label for="" class="oblic-label-input">Telefon
+                        <input type="text" name="material" id="material" placeholder="Wprowadź telefon" class="popup-oblic-button" required>
                     </label>
                 </form>
-                <div class="send-button">
-                    <button class="send" type="submit">Obliczyć</button>
+                <div class="send-button button-call-back">
+                    <button class="send" type="submit">Zadzwoń</button>
                 </div>
             </div>
     </div>
-  <!--
-<div class="popup-container-oddzwon">
-        <div class="popup-content-oddzwon">
-            <h2 class="title-oblic-popup">Oddzwoń</h2>
-            <button class="popup-close-oddzwon">X</button>
-            <p class="popup-oblic-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-            <form class="call-form">
-                <label for="" class="oblic-label-input">Twoje imię
-                    <input type="text" name="storona" id="storona" placeholder="Wprowadź swoje imię" class="popup-oblic-batton" required>
-                </label>
-                <label for="" class="oblic-label-input">Telefon
-                    <input type="text" name="material" id="material" placeholder="Wprowadź telefon" class="popup-oblic-batton" required>
-                </label>
-            </form>
-            <div class="send-button">
-                <button class="send" type="submit">Zadzwoń</button>
-            </div>
-        </div>
-</div> 
-  -->    
+   
     <script src="js/script.js"></script>
 </body>
 </html>
