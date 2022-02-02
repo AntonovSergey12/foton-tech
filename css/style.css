@@ -508,12 +508,17 @@ main {
     background-color: #ff7129;
     left: 205px;
 }
-.main-slaider{
+.slider{
+    max-width: 1700px;
     display: flex;
-    justify-items: center;
     margin: 0 auto;
     padding-bottom: 153px;
+    overflow: hidden;
 }
+.main-slaider {
+    margin-right: 160px;
+}
+/*contact*/
 .kontakt-main {
     width: 100%;
     min-height: 782px;
@@ -553,19 +558,20 @@ main {
     color: #20242D;
     padding-top: 125px;
     padding-left: 217px;
-    margin-bottom: 67px;
 }
 .kontakt-content {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 .kontakt-addresses {
     padding-left: 201px;
-    align-self: center;
+    padding-top: 178px;
+    max-width: 607px;
 }
 .kontakt-map {
+    justify-items: end;
     width: 800px;
-    align-self: end;
     height: 543px;
     background-image: url(../img/kontakt/map.jpg);
     position: relative;
@@ -576,7 +582,7 @@ main {
     width: 1px;
     height: 742px;
     background-color: #7b7e85;
-    top: -238px;
+    top: -190px;
     right: 199px;
     opacity: 0.15;
     z-index: -1;
@@ -678,7 +684,7 @@ main {
     -webkit-text-stroke-color: #fff;
     opacity: 0.3;
     top: 321px;
-    right: -10px;
+    right: 0;
 }
 .installation-medium-section {
     width: 100%;
@@ -762,12 +768,14 @@ main {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    color: #20242D
 }
 .installation-list-text {
     background-color: #f2f2f2;
     margin-bottom: 16px;
     position: relative;
     padding-left: 57px;
+   
 }
 .installation-list-text:last-child {
     margin-bottom: 24px;
@@ -777,7 +785,7 @@ main {
     content: "";
     width: 16px;
     height: 16px;
-    left: 16px;
+    left: 21px;
     top: 4px;
     background-image: url(../img/instalacia/list.svg);
 }
